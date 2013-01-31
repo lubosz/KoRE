@@ -23,9 +23,9 @@ if(WIN32)
 	    #OpenGL32
 	    #glaux
 	    #glu32
+	    opengl32
 	    glfw
 	    glew32
-	    opengl32
 	    KoRE 
 	    )
 	
