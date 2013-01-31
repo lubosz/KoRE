@@ -7,7 +7,7 @@ function(download_gl_header GL_HEADER)
     if(NOT EXISTS ${GL_HEADER_DIR}/${GL_HEADER})
         execute_process(
             WORKING_DIRECTORY ${GL_HEADER_DIR}
-            COMMAND wget http://www.opengl.org/registry/api/${GL_HEADER}
+            COMMAND curl -L http://www.opengl.org/registry/api/${GL_HEADER} -o ${GL_HEADER}
     )
     endif()
 endfunction(download_gl_header)
